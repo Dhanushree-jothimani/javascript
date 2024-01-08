@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width: 80px;
+            padding: 5px 10px;
+            border:3px solid aqua;     
+        }
+    </style>
+</head>
+<body>
+    <p id="click">Click</p>
+    <p id="double">DoubleClick</p>
+    <P id="mousedown">MouseDown</P>
+    <p id="mouseup">MouseUp</p>
+    <p id="mousemove">MouseMove</p>
+    <p id="mouseenter">MouseEnter</p>
+    <p id="mouseleave">MouseLeave</p>
+   <script>
+    let click=document.getElementById('click');
+    click.addEventListener('click',function(){
+        alert('CLICK')
+    })
+    let double=document.getElementById('double');
+    double.addEventListener('dblclick',function(){
+        alert('DOUBLECLICK')
+    })
+    let mousedown=document.getElementById('mousedown');
+    mousedown.addEventListener('mousedown',function(){
+        alert('MOUSEDOWN')
+    })
+    let mouseup=document.getElementById('mouseup');
+    mouseup.addEventListener('mouseup',function(){
+        alert('MOUSEUP')
+    })
+    let mousemove=document.getElementById('mousemove');
+    mousemove.addEventListener('mousemove',function(){
+        alert('MOUSEMOVE')
+    })
+    let mouseenter=document.getElementById('mouseenter');
+    mouseenter.addEventListener('mouseenter',function(){
+        alert('MOUSEENTER')
+    })
+    let mouseleave=document.getElementById('mouseleave');
+    mouseleave.addEventListener('mouseleave',function(){
+        alert('MOUSELEAVE')
+    })
+
+
+
+
+
+
+    
+    
+
+   </script>
+</body>
+</html>
