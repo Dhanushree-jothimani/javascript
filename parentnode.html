@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Node Example</title>
+    <style>
+        .parent{
+            border:2px solid blueviolet;
+            padding:10px;
+            background-color: greenyellow;
+        }
+        .child{
+            border:2px solid red;
+            margin:5px;
+            padding:5px;
+            background-color:blue;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">PARENT NODE
+        <div>
+            <div class="child">CHILD ELEMENT
+        </div>
+
+    </div>
+    <script>
+        let childElement=document.querySelector('.child');
+        let parentdiv=document.querySelector('.parent');
+
+        console.log(childElement.parentElement);
+        consoloe.log(parentdiv.childNodes);
+
+        let parentnode=childElement.parentnode;
+
+
+
+
+    </script>
+</body>
+</html>
