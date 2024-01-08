@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <center>
+    <div style="width:300px;height:300px">
+        <table>
+        <tr>
+          <h1><center>LOGIN</center></h1>
+        </tr>
+        <tr>
+            <td><label>username:</label></td>        
+           <td><input type="text" id="uname"></td>
+        </tr>
+        <tr>
+            <td><label>Password:</label></td>        
+           <td><input type="password" id="pass"></td>
+        </tr>
+        <tr>                    
+           <td><input type="checkbox" id="agree"></td>
+           <td><label for="">I AGREE THE TERMS AND CONDITION</label></td> 
+        </tr>
+        <tr>
+            <td><button id="submit">SUBMIT</button></td>
+        </tr>
+        <script>
+            
+           let username=document.getElementById("uname")
+           let password=document.getElementById("pass")
+           let submit=document.getElementById("submit");
+           submit.addEventListener('click',function(){
+            if(username.value=="dhanu"&&password.value=="123"){
+                alert("SUCCESSFULLY LOGIN!")
+            }
+            else{
+                alert("WRONG PASSWORD")
+            }
+
+           });    
+        </script>
+            
+
+    </table>
+    </div>
+    </center>
+</body>
+</html>
