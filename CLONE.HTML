@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cloning</title>
+    <style>
+        .original{
+            color:blueviolet;
+        }
+        .cloned{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="original">ORIGINAL ELEMENT
+        <P>HELLO I'M CHILD</P>
+        <ol>
+            <li>ONE</li>   
+            <li>TWO</li>
+            <li>THREE</li>
+            <li>FOUR</li>
+            <li>FIVE</li>
+        </ol>
+    </div>
+    <script>
+        let originalElement = document.querySelector('.original');
+       
+        let clonedElement = originalElement.cloneNode(true);
+        clonedElement.textContent +="NEW CONTENT";
+        clonedElement.classList.add('cloned');
+
+        document.body.append(clonedElement);
+    </script>
+</body>
+</html>
